@@ -2,6 +2,11 @@
 
 根据一个库的命名空间的调用进行按需导入。
 
+添加依赖:
+```
+npm i -D babel-plugin-module-call-import
+```
+
 它能将下面代码：
 ```
 import utils from 'utils@'

@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-module-call-import",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "根据库命名空间的调用加载模块",
   "main": "lib/index.js",
   "scripts": {
