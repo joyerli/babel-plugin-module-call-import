@@ -1,0 +1,35 @@
+# 编辑器
+.DS_Store
+.idea
+**/.idea/
+
+# 测试
+/test/unit/coverage
+/test/e2e/reports
+
+# 忽略文件
+/uipublic/
+**/node_modules/
+**/tmp.js
+**/tmp/
+**/__mocks__/
+
+# 脚本生成
+**/src/conf/router/routes.js
+/dist/
+**/dist/
+**/iconfont.*
+**/src/conf/configure/index.js
+
+# 日志
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/selenium-debug.log
+**/logs/
+
+# 其他
+
+**/__test__/asset/*
+
+

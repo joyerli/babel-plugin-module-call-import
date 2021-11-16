@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`具名和默认导入 1`] = `
+"import _default from \\"antd/lib/date-picker\\";
+import { Row } from 'antd';
+console.log(Row);
+console.log(_default);"
+`;
+
+exports[`具名导入 1`] = `
+"import { Row, DatePicker } from 'antd';
+console.log(Row);
+console.log(DatePicker);"
+`;
+
+exports[`命名空间导入 1`] = `
+"import _default2 from \\"antd/lib/date-picker\\";
+import \\"antd/lib/date-picker/style\\";
+import _default from \\"antd/lib/row\\";
+import \\"antd/lib/row/style\\";
+console.log(_default);
+console.log(_default2);"
+`;
+
+exports[`定制支持深层次使用 1`] = `
+"import _default from \\"common/common/utils/ajax/params/parse\\";
+console.log(_default);"
+`;
+
+exports[`当不定制更深层时，当作属性使用 1`] = `
+"import _default from \\"common/base-mixin\\";
+console.log(_default.title);"
+`;
+
+exports[`默认导入 1`] = `
+"import _default2 from \\"element-ui/lib/button\\";
+import \\"element-ui/lib/theme-chalk/button.css\\";
+import _default from \\"element-ui/lib/button-group\\";
+import \\"element-ui/lib/theme-chalk/button-group.css\\";
+export default {
+  name: 'TestComponent',
+  components: {
+    [_default.name]: _default,
+    [_default2.name]: _default2
+  },
+
+  data() {
+    return {};
+  }
+
+};"
+`;
