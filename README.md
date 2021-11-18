@@ -7,6 +7,26 @@
 npm i -D babel-plugin-module-call-import
 ```
 
+再babel中参考配置如下：
+```js
+{
+  plugins: [
+    [plugin, {
+      components: {
+        antd(libraryName, ...modules) {
+          return {
+            source: `${libraryName}/lib/${_.kebabCase(modules[1])}`,
+            extras: [
+              `${libraryName}/lib/${_.kebabCase(modules[1])}/style`,
+            ],
+          };
+        },
+      },
+    }]
+  ]
+}
+```
+
 它能将下面代码：
 ```
 import utils from 'utils@'
