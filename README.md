@@ -11,7 +11,7 @@ npm i -D babel-plugin-module-call-import
 ```js
 {
   plugins: [
-    [plugin, {
+    ['module-call-import', {
       components: {
         antd(libraryName, ...modules) {
           return {
